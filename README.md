@@ -1,2 +1,2 @@
 # FrankfurtUAS
-Skript und Code zur Probelehrveranstaltung
+Skript und Code inkl. Daten zur Probelehrveranstaltung
