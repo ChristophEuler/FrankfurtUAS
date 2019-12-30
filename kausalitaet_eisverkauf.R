@@ -34,5 +34,5 @@ mdl <- ctree(kauf~., data=df,
 
 # Plot model tree and adapt font sizes for better readibility
 plot(mdl,
-     ep_args = list(justmin = 2), 
+     ep_args = list(justmin = 2),
      gp = gpar(fontsize = 16))
