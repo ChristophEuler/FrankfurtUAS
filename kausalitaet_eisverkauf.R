@@ -1,7 +1,7 @@
 library(partykit)
 
-# Read data
-df <- read.csv("A:/bewerbungen/2019_09_HS-Frankfurt/kausalitaet/experiment/experiment/data.csv")
+# Read data; adapt this to your local path!
+df <- read.csv("data.csv")
 
 # View data
 View(df)
@@ -32,6 +32,7 @@ set.seed(-753)
 mdl <- ctree(kauf~., data=df,
              control = ctree_control(mincriterion = 0.95))
 
+# Plot model tree and adapt font sizes for better readibility
 plot(mdl,
      ep_args = list(justmin = 2), 
      gp = gpar(fontsize = 16))
